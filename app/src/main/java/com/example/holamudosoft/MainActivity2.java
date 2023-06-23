@@ -15,13 +15,14 @@ public class MainActivity2 extends AppCompatActivity {
 
         Bundle bundle = this.getIntent().getExtras();
 
-        txtSaludo.setText("Hola!, Bienvenido \n " +
-                bundle.getString("NOMBRE") + "\n" +
-                bundle.getString("CEDULA") + "\n" +
-                bundle.getString("FECHA") + "\n" +
-                bundle.getString("TELEFONO") + "\n" +
-                bundle.getString("CIUDAD")+ "\n" +
-                bundle.getString("GENERO"));
+        txtSaludo.setText("Bienvenido \n " +
+                bundle.getString("NOMBRE") + "\nCédula: " +
+                bundle.getString("CEDULA") + "\nFecha de Nacimiento: " +
+                bundle.getString("FECHA") + "\nTélefono: " +
+                bundle.getString("TELEFONO") + "\nCiudad: " +
+                bundle.getString("CIUDAD")+ "\nGénero: " +
+                bundle.getString("GENERO")+ "\nCorreo: " +
+                bundle.getString("CORREO"));
     }
 
 
